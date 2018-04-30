@@ -1,6 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
+// import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { CarouselModule } from 'ngx-bootstrap/carousel';
 
@@ -20,7 +20,7 @@ import { AppComponent } from './app.component';
     BrowserModule,
     AppRoutingModule
   ],
-   providers: [{provide: LocationStrategy, useClass: HashLocationStrategy}],
+   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
